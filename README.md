@@ -8,6 +8,8 @@ Reason for it is very simple - Arduino Leonardo should be reset to provide anoth
 
 This repository contains simple Windows-based bat file that identifies your Arduino Leonardo COM port through WMIC, performs COM port reset, then identifies bootloader COM port and invokes avrdude to upload firmware from firmware.hex file
 
+I use SparkFun Arduino Pro Micro, so it's name is hardcoded in upload.bat file on line #4. Change to your board name (can be obtained from Windows Device Manager)
+
 firmware.hex file is empty here, please put yours. 
 
 avrdude binary and config is taken from Arduino IDE 1.8.3
